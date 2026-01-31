@@ -3,21 +3,21 @@ package threadcreationviarunnable;
 //Runnable implementation 1
 class FileTask implements Runnable {
 	public void run() {
-		System.out.println("FileTask running on " + Thread.currentThread().getName());
+		System.out.println("FileTask running on " + Thread.currentThread().getName()+"\n");
 	}
 }
 
 //Runnable implementation 2
 class NetworkTask implements Runnable {
 	public void run() {
-		System.out.println("NetworkTask running on " + Thread.currentThread().getName());
+		System.out.println("NetworkTask running on " + Thread.currentThread().getName()+"\n");
 	}
 }
 
 //Runnable implementation 3
 class DatabaseTask implements Runnable {
 	public void run() {
-		System.out.println("DatabaseTask running on " + Thread.currentThread().getName());
+		System.out.println("DatabaseTask running on " + Thread.currentThread().getName() +"\n");
 	}
 }
 
@@ -37,6 +37,6 @@ public class RunnablePolymorphismDemo {
 		task = new DatabaseTask();
 		new Thread(task, "Worker-3").start();
 		
-		System.out.println("MAIN THREAD FINISHED");
+		System.out.println("MAIN THREAD FINISHED + \n");
 	}
 }
