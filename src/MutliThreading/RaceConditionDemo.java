@@ -1,4 +1,5 @@
 package MutliThreading;
+
 public class RaceConditionDemo {
 	// Shared resource
 	static class Counter {
@@ -16,6 +17,7 @@ public class RaceConditionDemo {
 			return count;
 		}
 	}
+
 	// Thread class
 	static class WorkerThread extends Thread {
 		private Counter counter;
