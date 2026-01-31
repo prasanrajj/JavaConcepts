@@ -34,12 +34,12 @@ public class Test {
 		Counter counter = new Counter();
 
 		WorkerThread t1 = new WorkerThread(counter, "T1");
-		WorkerThread t2 = new WorkerThread(counter, "T2");
+//		WorkerThread t2 = new WorkerThread(counter, "T2");
 
 		t1.start();
-		t2.start();
+//		t2.start();
 
-//		t1.join();
+		t1.join();
 //		t2.join();
 
 		System.out.println("Main ended");
